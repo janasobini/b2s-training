@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Embedding ❤</title>
+    <!-- load the java script file -->
+    <script
+      type="text/javascript"
+      src="https://public.tableau.com/javascripts/api/tableau-2.min.js"
+    ></script>
+  </head>
+  <body>
+    <h1>My First Embedding ❤</h1>
+    <div>
+      <button id="exportToPDF">Export PDF</button>
+      <button id="exportToPowerPoint">Export Powerpoint</button>
+    </div>
+
+    <div>
+      <input type="number" placeholder="min value" id="minValue" />
+      <input type="number" placeholder="max value" id="maxValue" />
+      <button id="filterbutton">Filter Sales Value</button>
+    </div>
+
+    <!-- Create a place to store our tableau dashboard (press ctrl+/ to add comment like this) -->
+    <div id="vizContainer"></div>
+
+    <!-- Load the app.js file  -->
+    <script src="./app.js"></script>
+  </body>
+</html>
